@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,q=0;
+    printf("Enter a  and b:");
+    scanf("%d %d ",&a,&b);
+    while(a!=0)
+    {
+        a=a-b;
+        if(a>=0)
+           q++;
+        if(a<b)
+           break;
+    }
+    printf("%d",q);
+}
